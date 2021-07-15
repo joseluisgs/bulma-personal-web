@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="sorayaleon">
+
+    <title>SORAYA LEON</title>
+
+    <!-- LIBRERÍAS EXTERNAS: Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- ICONOS: Font Awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png" />
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS: Mis estilos basados en Bulma -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+
+<body data-spy="scroll" data-target="menu">
+    <!-- INICIO -->
+
+    <a id="back_to_top"></a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar has-shadow is-info is-fixed-top px-3" id="menu" role="navigation" aria-label="main navigation">
+
+        <!-- logo  -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="assets/images/logo.png" style="max-height: 50px" class="px-2">
+            </a>
+            <div class="is-size-4 mx-3 my-0 is-flex is-align-items-center has-text-weight-medium">Soraya León</div>
+
+            <!-- burguer -->
+            <a role="button" id="navbar-menu-burguer" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbar-menu-items">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- elementos del menú -->
+        <div id="navbar-menu-items" class="navbar-menu">
+            <!-- Los colocamos al final -->
+            <div class="navbar-end mr-6">
+                <a class="navbar-item" href="#home">Inicio</a>
+                <a class="navbar-item" href="#sobre-mi">Sobre mi</a>
+                <a class="navbar-item" href="#proyectos">Proyectos</a>
+                <a class="navbar-item" href="#formacion">Formación</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Contacto
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://twitter.com/sorayaleongon" target="_blank">
+                            <i class="fab fa-twitter has-text-twitter mr-2"></i> Twitter
+                        </a>
+                        <a class="navbar-item" href="https://github.com/sorayaleon" target="_blank">
+                            <i class="fab fa-github has-text-github mr-2"></i> GitHub
+                        </a>
+                        <a class="navbar-item" href="https://www.linkedin.com/in/sorayaleon/?locale=es_ES"
+                            target="_blank">
+                            <i class="fab fa-linkedin has-text-linkedin mr-2"></i> Linkedin
+                        </a>
+                        <a class="navbar-item" href="mailto:sorayaleongon@gmail.com" target="_blank">
+                            <i class="fas fa-envelope has-text-danger mr-2"></i> E-Mail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO  -->
+    <section class="hero" id="home">
+        <!-- Efectos de animación -->
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+
+        <div class="section px-4">
+            <div class="columns is-centered is-vcentered">
+
+                <!--  Texto de presentación -->
+                <div class="column is-8">
+                    <div class="has-text-centered">
+                        <p
+                            class="mb-4 has-text-weight-bold has-text-white is-size-3 is-lectura animate__animated animate__fadeInUp animate__slow">
+                            ¡HOLA! 👋 </p>
+                        <h1
+                            class="mb-5 title persona has-text-weight-bold animate__animated animate__fadeInUp animate__slow">
+                            Soraya León González</h1>
+                        <p
+                            class="mb-5 subtitle is-size-2 ocupacion has-text-weight-medium animate__animated animate__fadeInUp animate__slow">
+                            &lt;Frontend developer/&gt;</p>
+                        <p class="mb-5 is-size-2 has-text-grey animate__animated animate__fadeInUp animate__slow">
+                            <a href="https://twitter.com/sorayaleongon" target="_blank">
+                                <i class="is-size-2 fab fa-twitter mx-2 has-text-grey-lighter"></i>
+                            </a>
+                            <a href="https://github.com/sorayaleon" target="_blank">
+                                <i class="is-size-2 fab fa-github mx-2 has-text-grey-lighter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sorayaleon/?locale=es_ES" target="_blank">
+                                <i class="is-size-2 fab fa-linkedin mx-2 has-text-grey-lighter"></i>
+                            </a>
+                            <a href="mailto:sorayaleongon@gmail.com" target="_blank">
+                                <i class="is-size-2 fas fa-envelope mx-2 has-text-grey-lighter"></i>
+                            </a>
+                        </p>
+                        <a href="#sobre-mi">
+                            <div class="chevron-container mb-6">
+                                <div class="chevron"></div>
+                                <div class="chevron"></div>
+                                <div class="chevron"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--  Imagen Sorayita -->
+                <div class="column is-4 has-text-centered">
+                    <img loading="lazy" src="assets/images/chica.png" alt="hero mobile" class="mobile-image 
+                                    mobile-image animate__animated animate__fadeInUp animate__slower">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="section is-large px-4" id="sobre-mi">
+        <div class="columns is-centered">
+            <!-- Imagen -->
+            <div class="column is-10 has-text-centered">
+                <!-- Swipper -->
+                <div class="swiper-container wow animate__animated animate__fadeInRight">
+                    <div class="swiper-wrapper has-text-centered">
+                        <div class="swiper-slide">
+                            <img loading="lazy" src="assets/images/soy_yo-1.png" alt="soy_yo-1" class="soy-yo"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/soy_yo-2.png" alt="soy_yo-2" class="soy-yo"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img loading="lazy" src="assets/images/soy_yo-3.png" alt="soy_yo-3" class="soy-yo"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img loading="lazy" src="assets/images/soy_yo-4.png" alt="soy_yo-4" class="soy-yo"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img loading="lazy" src="assets/images/soy_yo-5.png" alt="soy_yo-5" class="soy-yo"/>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <h5 class="is-size-5 has-text-grey has-text-weight-bold mt-2 mb-4 wow animate__animated animate__headShake"
+                    data-wow-delay="1s">Soraya León González</h5>
+                <h3 class="mb-5 is-size-3 has-text-info has-text-weight-medium is-lectura wow wow animate__animated animate__headShake mb-4"
+                    data-wow-delay="1s">Mi nombre es Soraya y te doy la bienvenida a mi portfolio. En
+                    él encontrarás algunos de los proyectos y cursos que he
+                    realizado.</h3>
+
+                <!--  Texto y tecnlogías -->
+                <div class="columns is-centered m-4 has-text-left">
+                    <div class="column is-6 mx-1">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2">¿Quién soy?</h2>
+                        <p class="is-size-5 is-lectura">
+                            Soy inquieta, resolutiva, tenaz, con gran capacidad de
+                            adaptación y me gusta trabajar en equipo.
+                        </p>
+                        <p class="is-size-5 mb-2 is-lectura">
+                            Actualmente trabajo como Front-end Developer realizando
+                            proyectos en Odoo y WordPress creando la experiencia interactiva completa:
+                            desde el diseño, implementación, hasta las pruebas de la misma.
+                        </p>
+                        <p class="is-size-5 mb-2 is-lectura">
+                            En mi día a día uso y además sigo formándome en tecnologías como Angular, Vue.js, Bootstrap,
+                            Firebase, React.js Bulma, Tailwind o Sass. Considero que siempre hay algo nuevo que
+                            aprender.
+                        </p>
+                        <p class="is-size-5 mb-2 is-lectura">
+                            También tengo conocimientos de Nodejs, PHP y Laravel como tecnologías de Backend y BB.DD
+                            como MongoDB y MariaDB/MySQL.
+                        </p>
+                        <p class="is-size-5 mb-2 is-lectura">
+                            Profesionalmente me apasiona el mundo del del desarrollo Frontend, y me gustaría
+                            desarrollarme y crecer en este área.
+                        </p>
+                        <p class="is-size-5 mb-2 is-lectura">
+                            Pero no todo es desarrollar o estar con los ordenadores. Me encanta pasear con mi perro,
+                            salir de senderismo, leer, ver series/películas,
+                            jugar a videojuegos. Prático deporte y poco a poco sigo intentando que alguno de mis
+                            instrumentos musicales suenen bien.
+                        </p>
+                        <p class="is-size-5 mb-2 is-lectura">
+                            Si quieres conocer más, sigue leyendo.
+                        </p>
+                    </div>
+                    <div class="column is-6">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2">Tecnologías preferidas</h2>
+                        <!-- Tecnologías -->
+                        <div class="columns is-multiline is-vcentered is-centered is-mobile is-gapless">
+                            <!-- Angular -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-angular fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="75" max="100">70%</progress>
+                                    <p class="progress-value has-text-white">75%</p>
+                                </div>
+                            </div>
+
+                            <!-- Vuejs -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-vuejs fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="65" max="100">65%</progress>
+                                    <p class="progress-value has-text-white">65%</p>
+                                </div>
+                            </div>
+
+                            <!-- JS -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-js-square fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="80" max="100">80%</progress>
+                                    <p class="progress-value has-text-white">80%</p>
+                                </div>
+                            </div>
+
+                            <!-- CSS -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-css3-alt fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="85" max="100">85%</progress>
+                                    <p class="progress-value has-text-white">85%</p>
+                                </div>
+                            </div>
+
+                            <!-- React -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-react fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="60" max="100">60%</progress>
+                                    <p class="progress-value has-text-white">60%</p>
+                                </div>
+                            </div>
+
+                            <!-- Node -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-node-js fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="50" max="100">50%</progress>
+                                    <p class="progress-value has-text-white">50%</p>
+                                </div>
+                            </div>
+
+                            <!-- Wordpress -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-wordpress fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="90" max="100">90%</progress>
+                                    <p class="progress-value has-text-white">90%</p>
+                                </div>
+                            </div>
+
+                            <!-- Git-->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-git-alt fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="85" max="100">85%</progress>
+                                    <p class="progress-value has-text-white">85%</p>
+                                </div>
+                            </div>
+
+                            <!-- PHP -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-php fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="55" max="100">55%</progress>
+                                    <p class="progress-value has-text-white">55%</p>
+                                </div>
+                            </div>
+
+                            <!-- PHP -->
+                            <div class="column is-2 mr-1">
+                                <i class="fab fa-laravel fa-2x"></i>
+                            </div>
+                            <div class="column is-9">
+                                <div class="progress-wrapper mt-4">
+                                    <progress class="progress is-progress" value="55" max="100">55%</progress>
+                                    <p class="progress-value has-text-white">55%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS-->
+    <section class="section is-large px-4" id="proyectos">
+        <div class="columns is-centered is-vcentered wow animate__animated animate__fadeInLeft">
+            <div class="has-text-centered has-text-grey mb-5">
+                <h1 class="is-size-1 has-text-weight-bold has-text-info-dark">Proyectos</h1>
+                <h3 class="is-size-4 has-text-weight-medium has-text-grey-dark is-lectura">Estos son algunos de mis proyectos personales. Sigo avanzando día a día.</h3>
+                <h4 class="is-size-4 has-text-weight-medium has-text-grey-dark is-lectura"><span class="icon-text">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span><a href="hhttps://github.com/sorayaleon/calculadora" target="_blank">Ver más.</a></span>
+                </span></h4>
+            </div>
+        </div>
+
+        <!-- Lista de proyectos 1 -->
+        <div class="columns is-centered wow animate__animated animate__fadeInLeft">
+            <div class="column is-3">
+                <div class="card proyecto">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img loading="lazy" src="assets/images/proyecto_instavue.png" alt="proyecto">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title has-text-centered has-text-info pb-2">
+                            InstaVue
+                        </p>
+                        <p class="subtitle is-lectura has-text-centered has-text-weight-medium has-text-progress">
+                            Vue.js, Firebase, Bulma
+                        </p>
+                        <p class="is-lectura">
+                            Clon de Instagram, con filtros de imagen y interacción en tiempo real.
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                                <span><a href="https://instavue-90ce4.web.app/" target="_blank">Visitar</a></span>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span><a href="https://github.com/sorayaleon/instavue" target="_blank">Ver</a></span>
+                        </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="column is-3">
+                <div class="card proyecto">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img loading="lazy" src="assets/images/proyecto_vuefilos.png" alt="proyecto">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title has-text-centered has-text-info pb-2">
+                            Vue Files
+                        </p>
+                        <p class="subtitle is-lectura has-text-centered has-text-weight-medium has-text-progress">
+                            Vue.js, Firebase, Bulma
+                        </p>
+                        <p class="is-lectura">
+                            Gestiona y comparte tus recursos preferidos de Vue.js.
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                                <span><a href="https://vuefilos-ebc8b.web.app/" target="_blank">Visitar</a></span>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span><a href="https://github.com/sorayaleon/filesVuesCollections" target="_blank">Ver</a></span>
+                            </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="column is-3">
+                <div class="card proyecto">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img loading="lazy" src="assets/images/proyecto_book.jpg" alt="proyecto">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title has-text-centered has-text-info pb-2">
+                            Córdoba Book Crossing
+                        </p>
+                        <p class="subtitle is-lectura has-text-centered has-text-weight-medium has-text-progress">
+                            Angular, Bootstrap, Laravel, API Rest
+                        </p>
+                        <p class="is-lectura">
+                            ¿Imaginas poder compartir tus libros e intercambiarlos en cualquier lugar?
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                                <span><a href="https://github.com/sorayaleon/bookCrossing" target="_blank">Visitar</a></span>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span><a href="https://github.com/sorayaleon/bookCrossing" target="_blank">Ver</a></span>
+                            </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>   
+        </div>
+
+        <!-- Lista de proyectos 2 -->
+        <div class="columns is-centered wow animate__animated animate__fadeInLeft">
+            <div class="column is-3">
+                <div class="card proyecto">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img loading="lazy" src="assets/images/proyecto_react.png" alt="proyecto">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title has-text-centered has-text-info pb-2">
+                            Resource App
+                        </p>
+                        <p class="subtitle is-lectura has-text-centered has-text-weight-medium has-text-progress">
+                            React.js, Firebase, Bulma
+                        </p>
+                        <p class="is-lectura">
+                            Gestiona y comparte tus rescursos preferidos sobre React.js.
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                                <span><a href="https://github.com/sorayaleon/resourcesApp" target="_blank">Visitar</a></span>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span><a href="https://github.com/sorayaleon/resourcesApp" target="_blank">Ver</a></span>
+                            </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        
+            <div class="column is-3">
+                <div class="card proyecto">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img loading="lazy" src="assets/images/proyecto_tictactoe.jpg" alt="proyecto">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title has-text-centered has-text-info pb-2">
+                            Tic Tac Toe
+                        </p>
+                        <p class="subtitle is-lectura has-text-centered has-text-weight-medium has-text-progress">
+                            JavaScript, HTML, CSS
+                        </p>
+                        <p class="is-lectura">
+                            Cuando me aburro siempre me hecho una partida. ¿Ganaré?.
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                                <span><a href="https://sorayaleon.github.io/games/tictactoe/" target="_blank">Visitar</a></span>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span><a href="https://github.com/sorayaleon/games/tree/master/tictactoe"
+                                        target="_blank">Ver</a></span>
+                            </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        
+            <div class="column is-3">
+                <div class="card proyecto">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img loading="lazy" src="assets/images/proyecto_calculadora.jpg" alt="proyecto">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title has-text-centered has-text-info pb-2">
+                            Calculadora
+                        </p>
+                        <p class="subtitle is-lectura has-text-centered has-text-weight-medium has-text-linkedin">
+                            JavaScript, HTML, CSS
+                        </p>
+                        <p class="is-lectura">
+                            Nada mejor que aprender a hacer una calculadora.
+                        </p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                                <span><a href="https://sorayaleon.github.io/calculadora/" target="_blank">Visitar</a></span>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span><a href="hhttps://github.com/sorayaleon/calculadora" target="_blank">Ver</a></span>
+                            </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMACION -->
+    <section class="section is-large px-4 wow animate__animated animate__fadeInRight" id="formacion">
+        <div class="columns is-centered is-vcentered">
+            <div class="has-text-centered has-text-grey mb-5 mx-4">
+                <h1 class="is-size-1 has-text-weight-bold has-text-info-dark">Formación</h1>
+                <h3 class="is-size-4 has-text-weight-medium has-text-grey-dark is-lectura">Todos los días intento aprender algo nuevo. Siempre me sigo formando.</h3>
+            </div>
+        </div>
+        <div class="columns is-centered m-4">
+            
+            <div class="column is-5 mx-1">
+                <!-- Cursos del 1 al 4 -->
+                <div class="columns is-multiline is-vcentered is-centered">
+                    <!-- Curso 1 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fab fa-vuejs fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a href="https://esatonline.es/formacion/vue-js-profesional-en-proyectos-reales/" target="_blank">Vue.js profesional en proyectos reales</a></h2>
+                        <p class="is-lectura">
+                            Escuela Superior de Arte y Tecnología de Valencia.
+                        </p>
+                    </div>
+
+                    <!-- Curso 2 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fab fa-js-square fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a
+                                href="https://openwebinars.net/carreras/full-stack-mevn/" target="_blank">Carrera Programador full stack MEVN</a></h2>
+                        <p class="is-lectura">
+                            Openwebinars.
+                        </p>
+                    </div>
+
+                    <!-- Curso 3 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fab fa-php fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a
+                                href="https://www.udemy.com/course/master-en-php-sql-poo-mvc-laravel-symfony-4-wordpress/" target="_blank">Master en PHP, SQL, POO, MVC, Laravel, Symfony, WordPress</a></h2>
+                        <p class="is-lectura">
+                            Udemy.
+                        </p>
+                    </div>
+
+                    <!-- Curso 4 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fas fa-file-code fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a
+                                href="https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/" target="_blank">Master en Frameworks JavaScript: Aprende Angular, React, Vue</a></h2>
+                        <p class="is-lectura">
+                            Udemy.
+                        </p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="column is-5 mx-1">
+                <!-- Cursos del 5 al 8 -->
+                <div class="columns is-multiline is-vcentered is-centered">
+                    <!-- Curso 5 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fab fa-angular fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a
+                                href="https://www.udemy.com/course/desarrollo-web-con-angular-la-biblia/" target="_blank">Curso de Desarrollo Web con Angular 11</a></h2>
+                        <p class="is-lectura">
+                            Udemy.
+                        </p>
+                    </div>
+                
+                    <!-- Curso 6 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fab fa-node-js fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a
+                                href="https://openwebinars.net/cursos/nodejs/" target="_blank">Curso de Node.js y Express</a></h2>
+                        <p class="is-lectura">
+                            Openwebinars.
+                        </p>
+                    </div>
+                
+                    <!-- Curso 7 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fab fa-bootstrap fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a
+                                href="https://openwebinars.net/cursos/bootstrap-4-layout/"
+                                target="_blank">Curso de Bootstrap 4: Maquetación Responsive y Layout</a></h2>
+                        <p class="is-lectura">
+                            Openwebinars.
+                        </p>
+                    </div>
+                
+                    <!-- Curso 4 -->
+                    <div class="column is-2 has-text-centered">
+                        <i class="fab fa-vuejs fa-3x has-text-info"></i>
+                    </div>
+                    <div class="column is-9">
+                        <h2 class="is-size-4 has-text-info has-text-weight-medium mb-2"><a
+                                href="https://escuelavue.es/series/curso-firebase-gratis/"
+                                target="_blank">Vue.js y Firebase</a></h2>
+                        <p class="is-lectura">
+                            Escuela Vue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="Footer" class="footer">
+        <div class="has-text-centered">
+            <p class="copyright">Coding with <i class="fas fa-heartbeat has-text-danger"></i> &copy;
+                <a href="https://github.com/sorayaleon" target="_blank" rel="noopener noreferrer">Soraya León</a>. 2021
+            </p>
+            <a href="https://twitter.com/sorayaleongon" target="_blank">
+                <i class="fab fa-twitter has-text-twitter rrss-icon"></i>
+            </a>
+            <a href="https://github.com/sorayaleon" target="_blank">
+                <i class="fab fa-github has-text-github rrss-icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sorayaleon/?locale=es_ES" target="_blank">
+                <i class="fab fa-linkedin has-text-linkedin rrss-icon"></i>
+            </a>
+            <a href="mailto:sorayaleongon@gmail.com" target="_blank">
+                <i class="fas fa-envelope has-text-danger rrss-icon"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- FIN -->
+
+    <!-- SCRIPTS: Si no concatenas debes poner todos aquí los que usas -->
+
+    <!-- Animaciones y efectos -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+            diameter: 56,
+            backgroundColor: '#5E7CDF',
+            textColor: '#fff'
+        })</script>
+
+
+    <!-- Mis scripts -->
+    <script src="assets/scripts/scripts.js" charset="utf-8"></script>
+
+</body>
+
+</html>

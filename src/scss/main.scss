@@ -1,0 +1,280 @@
+// Importamos
+@charset "utf-8";
+
+// MIS FUENTES
+// Fuente principal
+$family-sans-serif: 'Saira', sans-serif;
+$fuente-lectura:  'Montserrat', sans-serif;
+$fuente-codigo:  'Fira Code', monospace;
+
+// MIS COLORES
+$principal: #4467da;
+$oscuro: #0D1A44;
+$semi: #2242AA;
+$progreso: #6C87E2;
+
+// Colores que voy a sustituir a los de Bulma
+$info: $principal;
+
+// Nuevos colores y mapas de colores que agregaré para usar más fácil
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$progress: $progreso;
+$progress-invert: findColorInvert($linkedin);
+// Actualizmos el mapa de colores
+@import 'node_modules/bulma/sass/utilities/derived-variables';
+$addColors: (
+  'twitter': (
+    $twitter,
+    $twitter-invert,
+  ),
+  'github': (
+    $github,
+    $github-invert,
+  ),
+  'linkedin': (
+    $linkedin,
+    $linkedin-invert,
+  ),
+  'progress': (
+    $progress,
+    $progress-invert,
+  ),
+);
+$colors: map-merge($colors, $addColors);
+
+// IMPORTO EL RESTO DE BULMA
+@import 'node_modules/bulma/bulma.sass';
+
+// MIS ESTILOS CSS
+// Transiciones suaves de scroll
+html {
+  scroll-behavior: smooth;
+}
+
+// Centramos el burguer
+.navbar-burger {
+  height: auto;
+}
+
+// Sección Hero
+.hero {
+  width: 100%;
+  padding-top: 10vh;
+  height: 100%;
+}
+.hero:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle farthest-corner at 12.3% 19.3%, rgb(78, 81, 230) 0%, rgb(199, 240, 255) 100%);
+  animation: Gradient 15s ease infinite;
+  opacity: 0.8;
+}
+
+// Desplazamiento de la imagen
+.hero .mobile-image {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.hero .persona {
+  color: $oscuro;
+  font-size: 4rem;
+  // Así se hace un mediaquery con bulma y sass :)
+   @include until($tablet) {
+        font-size: 3rem;
+    }
+}
+
+
+.is-lectura {
+  font-family: $fuente-lectura;
+}
+
+.hero .ocupacion {
+  color: $semi;
+  font-family: $fuente-codigo;
+  @include until($tablet) {
+        font-size: 2rem;
+    }
+}
+
+// Sobre Mi
+
+.soy-yo {
+  border-radius:1rem;
+}
+
+.progress-wrapper {
+  position: relative;
+  height: auto;
+}
+
+.progress-value {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: calc(1rem / 1.5);
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+
+// Proyectos
+#proyectos {
+   background: radial-gradient(circle farthest-corner at 12.3% 19.3%,#AFBEEF 0%,#F2F4FC 100%);
+}
+
+// Proyecto
+.proyecto {
+  transition: 0.5s all ease;
+}
+.proyecto:hover {
+  box-shadow: 0 3px 50px -10px #211a74;
+}
+
+
+// Footer
+.footer {
+  padding: 1rem 1.5rem 1rem;
+  background-color: rgb(246, 251, 255);
+  box-shadow: -0px -2px 0px #d3d3d3;
+}
+
+/* Animación de vubo y otras */
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #d7d4e4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #fff;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/* cevron */
+.chevron-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.chevron {
+  position: absolute;
+  width: 0.5rem * 3.5;
+  height: 0.5rem * 0.8;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: $principal;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(0.5rem * 3.8);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(0.5rem * 5.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0.5rem * 8) scale(0.5);
+  }
+}
